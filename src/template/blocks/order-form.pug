@@ -1,0 +1,27 @@
+// order-form
+form.order-form(name="order")
+  .order-form__select-group
+    select.order-form__select.order-form__select_right.selectpicker(name="count")
+      option(value="1" data-content="<span class='selectpicker__text'>1</span>") 1
+      option(value="100" data-content="<span class='selectpicker__text'>100000000000000000000000000000000000000000000000</span>") 100
+    select.order-form__select.order-form__select_left.selectpicker(name="size")
+      option(value="M" data-content="<span class='selectpicker__label'>M</span><span class='selectpicker__text'>Medium Size</span>") Medium Size
+      option(value="M" data-content="<span class='selectpicker__label'>L</span><span class='selectpicker__text'>Large Size Large Size Large Size Large Size Large Size Large Size Large Size Large Size</span>") Large Size
+
+  .order-form__text-group
+    p.order-form__text
+      | Product is excluded from all promotional discounts and offers. This model is 5' 10" and wears a size S. Their chest measures 33" and the waist 25".
+
+  .order-form__checkbox-group
+    .customcheckbox
+      input#delivery-check.customcheckbox__checkbox(type="checkbox" name="delivery")
+      label.customcheckbox__label(for="delivery-check" title="delivery") Delivery
+      span.customcheckbox__icon.customcheckbox__icon_clear
+      span.customcheckbox__icon.customcheckbox__icon_checked
+    .customcheckbox
+      input#return-check.customcheckbox__checkbox(type="checkbox" name="return")
+      label.customcheckbox__label(for="return-check" title="return") Return
+      span.customcheckbox__icon.customcheckbox__icon_clear
+      span.customcheckbox__icon.customcheckbox__icon_checked
+
+  button.order-form__btn.btn.btn-block.btn_cta(type="submit") Add to cart

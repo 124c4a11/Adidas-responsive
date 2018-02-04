@@ -1,0 +1,26 @@
+/*================================================================
+  btn_cta
+================================================================*/
+
+.btn {
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5);
+  }
+}
+
+.btn_cta {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  border-radius: 0;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: em(5);
+  word-spacing: em(5);
+  background-color: #000;
+  transition: background-color .25s;
+
+  &:hover {
+    background-color: #222;
+  }
+}

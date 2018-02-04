@@ -1,0 +1,18 @@
+.product
+  .container
+    .row.product__row
+      .product__caption.col-sm-12.col-md-6.col-lg-4
+        article.product__description
+          header.product__description-header
+            p.product__subtitle New collection
+            h1.product__title New Yourk Colorblock Tank
+          p The relaxed hiking culture of New Yourk inspired Pharrell to create his Colorblock collection, a playful blend of retro and modern outdoor design.
+
+
+        include ../blocks/product-preview.pug
+
+      .product__model.col-lg-4
+        img.product__model-img(src="assets/img/model.png", alt="product-name")
+
+      .product__order.col-sm-12.col-md-6.col-lg-4
+        include ../blocks/order-form.pug

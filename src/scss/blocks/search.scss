@@ -1,0 +1,39 @@
+/*================================================================
+  search
+================================================================*/
+
+$duration: .25s;
+
+.search {
+  .search__field {
+    padding: 0 em(6);
+    border: 0 none;
+    border-radius: 0;
+    color: $text-color-base;
+    background-color: transparent;
+    @include placeholder-color($text-color-base);
+
+    @media (min-width: 992px) {
+      width: 112px;
+    }
+  }
+}
+
+.search__btn {
+  padding: em(8);
+  border-radius: 0;
+  background-color: transparent;
+
+  .search-icon {
+    opacity: .7;
+    transition-duration: $duration;
+  }
+
+  &:hover,
+  &:focus {
+    .search-icon {
+      opacity: 1;
+    }
+  }
+}
+

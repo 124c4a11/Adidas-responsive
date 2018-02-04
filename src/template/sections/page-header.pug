@@ -1,0 +1,26 @@
+header.page-header
+  nav.navbar.navbar-expand-lg
+    .container
+      a.navbar-brand(href="#")
+        img.navbar-brand__img(src="assets/img/logo.png", width="61" alt="adidas")
+      a.cart.navbar__cart(href="#" title="cart")
+        span.cart-icon.cart__icon
+        span.cart__badge 1
+      button.navbar-toggler.hamburger(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation" title="menu")
+        span.hamburger__item
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="#")
+              | Men
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href="#") Women
+          li.nav-item
+            a.nav-link(href="#") Kids
+          li.nav-item
+            a.nav-link(href="#") Accessories
+        form.search.form-inline.my-2.my-lg-0
+          button.search__btn.btn.my-2.my-sm-0(type="submit" title="search")
+            span.search-icon
+          input.search__field.form-control.mr-sm-2(type="search", placeholder="Search", aria-label="Search")

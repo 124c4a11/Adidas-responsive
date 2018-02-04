@@ -1,0 +1,27 @@
+/*================================================================
+  hero
+================================================================*/
+
+.hero {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  min-height: 600px;
+  background-color: #f5f2ec;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 33%);
+    width: 595px;
+    height: 595px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #fddf83, #f6edd4);
+  }
+
+  @media (max-width: 1199px) {
+    min-height: 400px;
+  }
+}

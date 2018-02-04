@@ -1,0 +1,46 @@
+/*================================================================
+  order-form
+================================================================*/
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.order-form__select-group {
+  margin-bottom: 25px;
+  @include clearfix;
+}
+
+.order-form__select_left {
+  display: block !important;
+  width: auto !important;
+  margin-right: 99px;
+}
+
+.order-form__select_right {
+  float: right !important;
+  width: 89px !important;
+  margin-left: 10px;
+}
+
+.order-form__text-group {
+  margin-bottom: 11px;
+}
+
+.order-form__text {
+  margin-top: 0;
+  margin-bottom: em(10);
+  font-size: em(10);
+  line-height: 1.7;
+  color: #9d9d9d;
+}
+
+.order-form__checkbox-group {
+  margin-bottom: 40px;
+}
+
+.order-form__btn {
+  margin-top: auto;
+}

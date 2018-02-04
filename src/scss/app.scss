@@ -1,0 +1,19 @@
+/*==========================================================================
+  Common
+==========================================================================*/
+
+@import 'common/variables.scss';
+@import 'common/mixins.scss';
+@import 'common/functions.scss';
+// @import 'common/fonts.scss';
+// @import 'common/fonts-mixins.scss';
+@import 'common/typography.scss';
+@import 'common/browserupgrade.scss';
+// @import 'common/sprite.scss';
+
+
+/*==========================================================================
+  Blocks
+==========================================================================*/
+
+@import 'blocks/**/*.scss';
