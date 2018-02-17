@@ -1,0 +1,34 @@
+// product-preview
+#product-preview.product__preview.preview.carousel.slide(data-ride='carousel')
+  .carousel-inner.preview__inner
+    -
+      var carouselItems = [
+        {
+          active: true,
+          title: 'NY Colorblock Top',
+          subtitle: 'Pharrell Williams',
+          img: 'assets/img/product.png',
+          price: '$299'
+        },{
+          title: 'NY Colorblock Top',
+          subtitle: 'Pharrell Williams',
+          img: 'assets/img/product.png',
+          price: '$299'
+        }
+      ];
+
+    each item in carouselItems
+      .carousel-item(class= item.active ? 'active' : '')
+        .preview__card
+          .preview__card-img-wrapper
+            img.preview__card-img(src= item.img alt="product name")
+          .preview__card-description
+            p.preview__card-subtitle(title= item.subtitle)= item.subtitle
+            h2.preview__card-title(title= item.title)= item.title
+            .preview__card-price(title= item.price)= item.price
+
+  .preview__controls
+    a.preview__btn.preview__btn_prev.carousel-control-prev(href='#product-preview', role='button', data-slide='prev' title="previous slide")
+      span.sr-only Previous
+    a.preview__btn.preview__btn_next.carousel-control-next(href='#product-preview', role='button', data-slide='next' title="next slide")
+      span.sr-only Next

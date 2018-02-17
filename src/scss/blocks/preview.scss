@@ -6,22 +6,16 @@ $border-width: $border-width-base;
 $border-style: solid;
 $border-color: $border-color-base;
 
-.product__preview {
+.preview {
   display: flex;
   min-height: 123px;
-  margin-top: auto;
-  margin-bottom: 71px;
 
   @media (max-width: 1322px) {
     flex-direction: column;
   }
-
-  @media (max-width: 767px) {
-    margin-bottom: 35px;
-  }
 }
 
-.product__preview-inner {
+.preview__inner {
   flex-grow: 1;
 
   @media (max-width: 767px) {
@@ -33,40 +27,40 @@ $border-color: $border-color-base;
   product__preview__card
 ================================================================*/
 
-.product__preview-card {
+.preview__card {
   display: flex;
   min-height: 116px;
   align-items: stretch;
 }
 
-.product__preview-img-wrapper {
+.preview__card-img-wrapper {
   overflow: hidden;
   flex-shrink: 0;
   width: 62px;
   margin-right: 36px;
 }
 
-.product__preview-img {
+.preview__card-img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.product__preview-description {
+.preview__card-description {
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.product__preview-subtitle,
-.product__preview-title,
-.product__preview-price {
+.preview__card-subtitle,
+.preview__card-title,
+.preview__card-price {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.product__preview-subtitle {
+.preview__card-subtitle {
   margin-top: 3px;
   margin-bottom: 12px;
   font-weight: 600;
@@ -76,13 +70,13 @@ $border-color: $border-color-base;
   text-transform: uppercase;
 }
 
-.product__preview-title {
+.preview__card-title {
   margin-top: 0;
   font-weight: 700;
   font-size: em(18);
 }
 
-.product__preview-price {
+.preview__card-price {
   margin-top: auto;
   margin-bottom: 1px;
   font-weight: 700;
@@ -97,13 +91,13 @@ $arrow-stroke: 2px;
 $arrow-color: #dcd7d0;
 $arrow-color-active: $text-color-base;
 
-.product__preview-controls {
+.preview__controls {
   display: flex;
   flex-shrink: 0;
   align-self: flex-end;
 }
 
-.product__preview-btn {
+.preview__btn {
   position: relative;
   top: auto;
   right: auto;
@@ -132,7 +126,7 @@ $arrow-color-active: $text-color-base;
   }
 }
 
-.product__preview-btn_prev {
+.preview__btn_prev {
   &::before {
     left: 50%;
     transform: translate(-26%, -32%) rotate(-45deg);
@@ -140,7 +134,7 @@ $arrow-color-active: $text-color-base;
   }
 }
 
-.product__preview-btn_next {
+.preview__btn_next {
   border-left: $border-width $border-style $border-color;
 
   &::before {
