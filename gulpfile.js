@@ -27,12 +27,12 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'pug',
     'sass',
-    // 'css:vendor',
+    'css:vendor',
     'sprite:png',
     'copy:image',
     // 'copy:fonts',
-    'sprite:svg'
-    // 'js:webpack'
+    'sprite:svg',
+    'js:webpack'
   ),
   $.gulp.parallel(
     'watch',

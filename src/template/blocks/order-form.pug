@@ -1,12 +1,12 @@
 // order-form
 form.order-form(name="order")
   .order-form__select-group
-    select.order-form__select.order-form__select_right.selectpicker(name="count")
-      option(value="1" data-content="<span class='selectpicker__text'>1</span>") 1
-      option(value="100" data-content="<span class='selectpicker__text'>100000000000000000000000000000000000000000000000</span>") 100
-    select.order-form__select.order-form__select_left.selectpicker(name="size")
-      option(value="M" data-content="<span class='selectpicker__label'>M</span><span class='selectpicker__text'>Medium Size</span>") Medium Size
-      option(value="M" data-content="<span class='selectpicker__label'>L</span><span class='selectpicker__text'>Large Size Large Size Large Size Large Size Large Size Large Size Large Size Large Size</span>") Large Size
+    select.order-form__select.order-form__select_right.customselect(name="count")
+      option(value="1") 1
+      option(value="100") 100
+    select.order-form__select.order-form__select_left.customselect(name="size")
+      option(value="M" data-badge="M") Medium Size
+      option(value="L" data-badge="L") Large Size
 
   .order-form__text-group
     p.order-form__text
